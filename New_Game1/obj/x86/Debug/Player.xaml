@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="New_Game1.Player"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:New_Game1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas x:ConnectionId='2' x:Name="CanvasPlayer" FocusVisualPrimaryBrush="#FFD81414" Background="#FF051548">
+        <Image x:ConnectionId='3' x:Name="ImgParadisejpg" Source="/Assets/ImgParadisejpg.jpg" Canvas.Left="-11" Canvas.Top="6" />
+        <Image x:ConnectionId='4' x:Name="ImgRain" Source="/Assets/ImgRain-storm-ss.gif" Height="734" Width="1312" Canvas.Left="-21" Canvas.Top="-9" />
+        <MediaElement x:ConnectionId='5' x:Name="BackgroundMusic" Source="/Assets/BackgroundMusic.m4a"/>
+        <MediaElement x:ConnectionId='6' x:Name="RainSound" Source="/Assets/RainSound.m4a"/>
+        <MediaElement x:ConnectionId='7' x:Name="RiverSound" Source="/Assets/RiverSound.m4a"/>
+        <MediaElement x:ConnectionId='8' x:Name="SoundGifts" Source="/Assets/SoundGifts.m4a"/>
+        <MediaElement x:ConnectionId='9' x:Name="PainSound" Source="/Assets/PainSound.wav"/>
+        <Button x:ConnectionId='10' x:Name="TimeButton" Content="עצור" Canvas.Left="57" Canvas.Top="39"                          RenderTransformOrigin="0.531,0.387" Background="#FFE5DB23" FontWeight="Bold" Height="59" FontSize="24" FocusVisualPrimaryBrush="White" Foreground="#FF060C38" Width="89"/>
+        <TextBlock x:ConnectionId='11' x:Name="TxtBlTime" Canvas.Left="604" Canvas.Top="39" Text="" TextWrapping="Wrap" Height="58" Width="109" Foreground="#FFE4CB0C" FontSize="36" TextAlignment="Center" RenderTransformOrigin="0.469,0.499" FontWeight="Bold"/>
+        <Button x:ConnectionId='12' x:Name="BtnEndGame" Content="סיום" Canvas.Left="1169" Canvas.Top="39" Height="59"  Width="71" Background="#FFEBD735" FontSize="24" FontWeight="Bold" BorderBrush="#FFC7C319" FocusVisualSecondaryBrush="#FFB3B52B" FocusVisualPrimaryBrush="#FFD2D40D" RenderTransformOrigin="0.5,0.5"                          >
+            <Button.Foreground>
+                <SolidColorBrush Color="#FF0A0C33"/>
+            </Button.Foreground>
+        </Button>
+        <TextBlock x:ConnectionId='13' x:Name="TxtBlCommandmentsNum" Canvas.Left="325" Canvas.Top="60" Text="TextBlock" TextWrapping="Wrap" Height="59" Width="85" FontSize="48" TextAlignment="Center" Foreground="#FFD718B0" FontWeight="Bold"/>
+        <TextBlock x:ConnectionId='14' x:Name="TxtBlGoldsNum" Canvas.Left="929" Canvas.Top="60" Text="TextBlock" TextWrapping="Wrap" Height="59" Width="85" FontSize="48" FontWeight="Bold" TextAlignment="Center" Foreground="#FFD718B0"/>
+        <TextBlock Canvas.Left="886" Canvas.Top="5" Text="שכר בעולם הזה" TextWrapping="Wrap" Height="70" Width="169" RenderTransformOrigin="0.407,0.513" TextAlignment="Center" FontSize="24" FontWeight="Bold" TextDecorations="Underline">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+            </TextBlock.Foreground>
+            <TextBlock.FocusVisualPrimaryBrush>
+                <SolidColorBrush Color="{ThemeResource SystemAltMediumLowColor}"/>
+            </TextBlock.FocusVisualPrimaryBrush>
+        </TextBlock>
+        <TextBlock Canvas.Left="284" Canvas.Top="5" Text="שכר לעולם הבא" TextWrapping="Wrap" Height="70" Width="169" FontWeight="Bold" TextAlignment="Center" FontSize="24" TextDecorations="Underline">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock Canvas.Left="1160" Canvas.Top="141" Text="רפואה" TextWrapping="Wrap" Height="37" RenderTransformOrigin="0.578,0.672" FontWeight="Bold" TextAlignment="Center" FontSize="30" FocusVisualPrimaryBrush="#FF1653A8" TextDecorations="Underline">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="{ThemeResource SystemAltHighColor}"/>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBlock x:ConnectionId='15' x:Name="TxtBlMedicine" Canvas.Left="1175" Canvas.Top="195" Text="" TextWrapping="Wrap" Height="71" Width="54" RenderTransformOrigin="0.484,0.597" FontWeight="Bold" TextAlignment="Center" FontSize="48" Foreground="#FFD01FDD"/>
+    </Canvas>
+</Page>
+

@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="New_Game1.InstructionsScreen"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:New_Game1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Canvas>
+        <Image Source="/Assets/תמונת מבוא- 1.jpg" Height="705" Canvas.Left="644" Canvas.Top="8" />
+        <Image Source="/Assets/תמונת מבוא- 2.jpg" RenderTransformOrigin="0.45,0.468" Canvas.Left="200" Height="713" Width="444" Canvas.Top="-8" />
+        <TextBlock Canvas.Left="781" Canvas.Top="110" TextWrapping="Wrap" Height="361" Width="247" Text=" שלום ילדים יקרים!         *המשחק מיועד לילדים                   מגילאי 6 ומעלה.                                      להלן  הוראות המשחק : כמו בחיים האמיתיים יש לברוח מהיצר הרע שרוצה לעשות אותנו רעים,  ולאסוף כמה שיותר תורה ומצוות ומעשים טובים, ועל ידי כך אתם צוברים הרבה שכר, ואז העולם ניהיה יותר טוב, ואז נזכה שהקדוש ברוך הוא הטוב והמטיב יבנה לנו שוב את בית המקדש ויישרה שכינתו בתוכנו.  בהצלחה  !!!    " FontWeight="Bold" FontSize="17" TextAlignment="Center"/>
+        <Button x:Name="btnPlay" Content="לחץ כאן" Canvas.Left="849" Canvas.Top="497" RenderTransformOrigin="0.226,0.71" Height="47" FontWeight="Bold" FontSize="16" Foreground="#FFDBD11A" BorderBrush="#FFCAC737" FocusVisualPrimaryBrush="#FFE5ED32" FocusVisualSecondaryBrush="#99D7C329" Click="btnPlay_Click"/>
+        <MediaElement x:Name="InstructionsMusic" Source="/Assets/InstructionsMusic.m4a"></MediaElement>
+        <Button x:Name="btnExit" Content="יציאה" Canvas.Left="60" Canvas.Top="64" Height="59" Width="89" FontSize="26" FontWeight="Bold" Background="#FF150F0F" Foreground="#FFEBE831" Click="btnExit_Click"/>
+    </Canvas>
+</Page>
